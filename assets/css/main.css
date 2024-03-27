@@ -1,181 +1,112 @@
 body {
-    background-color: #F5F6F8;
-    color: var(--color-text);
-    padding-top: 56px;
-}
-
-.container {
-    width: 1140px;
-    margin: 0 auto;
-}
-
-.img-cover {
-    object-fit: cover;
-}
-
-.img-contain {
-    object-fit: contain;
+    background-color: #f5f6f8;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
     padding: 12px 0;
-    z-index: 1001;
+    background-color: #fff;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-inner {
-    display: flex;
-    align-items: center;
-}
-
-.header-inner .logo {
-    display: flex;
-    align-items: center;
+.logo {
     height: 24px;
     margin-right: 18px;
 }
 
-.header-inner .search {
-    background-color: rgba(222, 222, 222, 0.32);
+.profile  {
     display: flex;
+    font-size: 12px;
+    align-items: center;
+    min-width: 160px;
+}
+
+.profile-photo figure {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.profile-photo .icon {
+    font-size: 16px;
+    color: #A7B4CC;
+}
+
+.profile > *:not(:last-child) {
+    margin-right: 6px;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-text {
+    text-align: right;
+}
+
+.profile-text span {
+    font-size: 10px;
+    color: var(--greenColor);
+}
+
+.search {
     height: 32px;
+    width: 312px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
     padding: 7px 9px;
     border-radius: 4px;
-    width: 312px;
+    margin-right: 68px;
 }
 
-.header-inner .search input {
-    background-color: transparent;
-    border: none;
-    margin-left: 16px;
-    flex-grow: 1;
-}
-
-.header-inner .search input::placeholder {
-    color: #aaa;
-}
-
-.header-inner .navbar {
+.search .icon {
+    width: 18px;
+    height: 18px;
     display: flex;
     align-items: center;
-    padding-left: 68px;
+    justify-content: center;
+    margin-right: 16px;
+    color: var(--grayColor);
 }
 
-.header-inner .navbar a {
-    display: flex;
-    align-items: center;
-    line-height: 24px;
+.search input {
+    height: 32px;
+    width: 100%;
+}
+
+.search input::placeholder {
+    color: var(--grayColor);
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.navbar-link {
+    color: var(--grayColor);
     font-size: 14px;
+}
+
+.navbar-link span {
+    display: none;
+}
+
+.navbar-link.active {
+    color: var(--primaryColor);
     font-weight: 500;
 }
 
-.header-inner .navbar a:not(:last-child) {
-    margin-right: 32px;
-}
-
-.header-inner .navbar a span {
-    display: none;
-    transform: translateY(2px);
-    margin-left: 6px;
-    color: var(--color-primary);
-}
-
-.header-inner .navbar a.active span {
+.navbar-link.active span {
     display: inline;
 }
 
-.header-profile {
-    display: flex;
-    align-items: center;
+.navbar-link:not(:last-child) {
+    margin-right: 32px;
 }
 
-.header-profile p {
-    font-size: 12px;
-}
-
-.header-profile small {
-    font-size: 10px;
-    color: #31B057;
-}
-
-.header-profile p,
-.header-profile small {
-    text-align: right;
-    display: block;
-}
-
-.header-profile .image {
-    display: flex;
-    align-items: center;
-    margin-left: 6px;
-}
-
-.header-profile figure {
-    width: 24px;
-    height: 24px;
-    border-radius: 9999px;
-    overflow: hidden;
-}
-
-.main-content {
-    display: flex;
-    padding-top: 16px;
-    gap: 0 30px;
-}
-
-.page-left,
-.page-right {
-    width: 270px;
-    flex-shrink: 0;
-}
-
-.page-content {
-    flex-grow: 1;
-}
-
-.card-profile {
-
-}
-
-.card-profile .head {
-    background-image: url('../img/card-profile-bg.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15px;
-}
-
-.card-profile .head figure {
-    width: 52px;
-    height: 52px;
-    border-radius: 9999px;
-    border: 2px solid #fff;
-    overflow: hidden;
-    margin-bottom: 8px;
-}
-
-.card-profile .head p {
-    margin-bottom: 4px;
-}
-
-.card-profile .item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-profile .item:not(:last-child) {
-    margin-bottom: 16px;
+.navbar-link .icon {
+    margin-right: 6px;
+    font-size: 18px;
 }

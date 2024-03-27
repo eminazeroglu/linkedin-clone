@@ -1,7 +1,6 @@
-@import url('./reset.css');
-@import url('./font.css');
-@import url('./variable.css');
-@import url('./icon.css');
-@import url('./typhograph.css');
-@import url('./common.css');
-@import url('./main.css');
+@import "../icons/css/icon.min.css";
+@import "./reset.css";
+@import "./font.css";
+@import "./variables.css";
+@import "./helper.css";
+@import "./main.css";

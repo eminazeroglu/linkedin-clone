@@ -2,116 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkedin Clone</title>
+    <title>Linkedin UI Clone</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
-        <div class="container">
-            <!-- Header Content -->
-            <div class="header-content">
-                <!-- Header Inner -->
-                <div class="header-inner">
-                    <a href="#" class="logo">
-                        <img src="./assets/img/logo.svg" alt="">
+        <div class="container flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="logo">
+                    <img src="./assets/img/logo.svg" class="img-contain" alt="">
+                </a>
+                
+                <div class="search">
+                    <i class="icon icon-search2"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <nav class="flex items-center navbar">
+                    <a href="#" class="inline-flex items-center navbar-link active">
+                        <i class="icon icon-home3"></i>
+                        <span>Home</span>
                     </a>
 
-                    <!-- Search -->
-                    <div class="search">
-                        <i class="icon icon-md icon-search"></i>
-                        <input type="text" placeholder="Search...">
-                    </div>
-                    <!-- Search End -->
+                    <a href="#" class="inline-flex items-center navbar-link">
+                        <i class="icon icon-users1"></i>
+                        <span>Friends</span>
+                    </a>
 
-                    <!-- Navbar -->
-                    <nav class="navbar">
-                        <a href="#" class="active">
-                            <i class="icon icon-home icon-lg"></i>
-                            <span>Home</span>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-users icon-lg"></i>
-                            <span>Users</span>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-briefcase icon-lg"></i>
-                            <span>Jobs</span>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-message icon-lg"></i>
-                            <span>Message</span>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-bell icon-lg"></i>
-                            <span>Notification</span>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-grid icon-lg"></i>
-                        </a>
-                    </nav>
-                    <!-- Navbar End -->
-                </div>
-                <!-- Header Inner End -->
+                    <a href="#" class="inline-flex items-center navbar-link">
+                        <i class="icon icon-briefcase2"></i>
+                        <span>Jobs</span>
+                    </a>
 
-                <!-- Header Profile -->
-                <div class="header-profile">
-                    <div>
-                        <p>Cameron Williamson</p>
-                        <small>Online</small>
+                    <a href="#" class="inline-flex items-center navbar-link">
+                        <i class="icon icon-bell2"></i>
+                        <span>Notifications</span>
+                    </a>
+
+                    <a href="#" class="inline-flex items-center navbar-link">
+                        <i class="icon icon-grid"></i>
+                        <span>More</span>
+                    </a>
+                </nav>
+
+            </div>
+
+            <div>
+                <div class="profile">
+                    <div class="profile-text">
+                        <h3>Cameron Williamson</h3>
+                        <span>Online</span>
                     </div>
-                    <div class="image">
+                    <div class="profile-photo">
                         <figure>
                             <img class="img-cover" src="./assets/img/profile.jpeg" alt="">
                         </figure>
-                        <i class="icon icon-xs icon-chevron-up"></i>
+
+                        <span>
+                            <i class="icon icon-angle-down"></i>
+                        </span>
                     </div>
                 </div>
-                <!-- Header Profile End -->
             </div>
-            <!-- Header Content End -->
+
         </div>
     </header>
-    <!-- Header End -->
-
-    <div class="container">
-        <main class="main-content">
-            <aside class="page-left">
-                <div class="box card-profile">
-                    <div class="head">
-                        <figure>
-                            <img class="img-cover" src="./assets/img/profile.jpeg" alt="">
-                        </figure>
-                        <p class="text-md">Cameron Williamson</p>
-                        <small class="text-mute text-sm">Business Analyst</small>
-                    </div>
-                    <hr>
-                    <div class="item">
-                        <p class="text-sm">Who viewed your profile</p>
-                        <span class="text-primary text-sm">90</span>
-                    </div>
-                    <div class="item">
-                        <p class="text-sm">Views of your post</p>
-                        <span class="text-primary text-sm">627</span>
-                    </div>
-                </div>    
-            </aside>
-
-            <section class="page-content">
-                <div class="box">
-                    Page Content
-                </div> 
-            </section>
-
-            <aside class="page-right">
-                <div class="box">
-                    Page Right
-                </div> 
-            </aside>
-        </main>
-    </div>
-
 </body>
 </html>
